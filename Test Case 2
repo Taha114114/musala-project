@@ -1,0 +1,312 @@
+id: -5gGwY9C8EmYAI95kENTNg
+projectId: 9P0_U-P7nU-YTLT8Plutzg
+projectName: Musala Project
+created: 2022-02-25T17:03:04.0435617Z
+protocol: 1
+tests:
+- id: FWk-qEW-gU-d1g3X2OBltQ
+  name: Test Case 2
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-02-19T15:35:50.0000000
+  modificationDate: 2022-02-19T16:54:22.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: S0NZhtT_dEiumA3zEoRdQw
+    name: MusalaSite
+    url: http://www.musala.com/
+    platform: Web
+  steps:
+  - id: 2r0EFIOi7k-aatCLS6IGJw
+    comments: >
+      Step 1) Visit http://www.musala.com/
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '[[BaseURL]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: u0NnJ3MOsU2NDPVSt1JqNw
+    comments: >
+      Step 2) Click ‘Company’ tap from the top
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: tl856T7fT0WujGYaiiAxXw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: YoqtE_fFs0iNxls2Of7Fxw
+    comments: >
+      Step 3) Verify that the correct URL (http://www.musala.com/company/) loads
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 56a4ad1b-b563-4322-ba29-d165090302b2
+      source: System
+    parameterMaps:
+    - name: url
+      value: ''
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: url
+      value: https://www.musala.com/company/
+    contexts: []
+  - id: iVS1cPe8xUyZw9KQo8lyHQ
+    comments: >
+      Step 4) Verify that there is ‘Leadership’ section
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: yxS5LTrhYUGBO4o8NM6SQA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: e8kqfVjhD06wcZDOSik4fQ
+    comments: >
+      Step 5) Click the Facebook link from the footer
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Addon
+    elementId: BkIDO2q7y0Smxhsv5c-vtw
+    settings:
+      sleepTime: 2000
+      timeout: -1
+      sleepTiming: Before
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Ueu21RSWRU-qCJ8FYCBvbw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 3a7a12fb-66a4-47c2-aaf0-deeb7b1f748a
+      source: System
+    parameterMaps:
+    - name: index
+      value: 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: XMc0NdW6_0isqaPB1nd78A
+    comments: 6) Verify that the correct URL (https://www.facebook.com/MusalaSoft?fref=ts) loads
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: 2000
+      timeout: 35000
+      sleepTiming: Before
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 56a4ad1b-b563-4322-ba29-d165090302b2
+      source: System
+    parameterMaps:
+    - name: url
+      value: '{{GotCompanyURL}}'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: url
+      value: https://www.facebook.com/MusalaSoft?fref=ts
+    contexts: []
+  - id: zDsxND3XXkq3S12BVZfitQ
+    comments: >
+      Step 6) Verify that the Musala Soft profile picture appears on the new page
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: gHMfa29I00a7EUJPs-KduA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 5e4cb36f-7757-4d63-8216-ba4e69496416
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: http://www.musala.com/
+    type: Input
+  - name: GotCompanyURL
+    description: ''
+    value: http://www.musala.com/company/
+    type: Input
+auxTests: []
+elements:
+- id: tl856T7fT0WujGYaiiAxXw
+  name: COMPANY
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //nav/div/div/ul//a[. = 'Company']
+    priority: 0
+  - name: XPATH
+    value: //nav/div/div/ul/li[1]/a
+    priority: 1
+  - name: XPATH
+    value: /html/body/header/nav[2]/div/div/ul/li[1]/a
+    priority: 2
+- id: yxS5LTrhYUGBO4o8NM6SQA
+  name: Leadership
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTA
+    name: Heading
+    source: System
+  locators:
+  - name: XPATH
+    value: //h2[. = 'Leadership']
+    priority: 0
+  - name: XPATH
+    value: //section/div/h2
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/div[2]/section[3]/div/h2
+    priority: 2
+- id: BkIDO2q7y0Smxhsv5c-vtw
+  name: SPAN
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjU
+    name: span
+    source: System
+  locators:
+  - name: XPATH
+    value: //a[4]/span
+    priority: 0
+  - name: XPATH
+    value: /html/body/footer/div/div/a[4]/span
+    priority: 1
+- id: gHMfa29I00a7EUJPs-KduA
+  name: IMG
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTI
+    name: Image
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[2]/div/a/div//img
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[1]/div/div[1]/div/div[3]/div/div/div[1]/div[1]/div[1]/div[1]/div/div/div[2]/div/a/div/div/div/div/img
+    priority: 1
+projectParameters: []
+addons:
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.6
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  - id: Nv5yOK03QkCH5IC9CwaKoQ
+    name: Scroll To Element With Javascript
+    description: Using Javascript to scroll to the element
+    className: io.testproject.addon.jsactions.ScrollToElementAction
+  - id: Z0JU97Txc0G-nl0HwPAucw
+    name: Type text (using JavaScript)
+    description: Type {{text}} in {{element}}
+    className: io.testproject.addon.jsactions.TypeTextAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 3ECC35CC7CDCF2EEEB9BE88040421FAE0F4C78FB0963CF9ED9D077CB1893A3FA
