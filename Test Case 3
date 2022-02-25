@@ -1,0 +1,896 @@
+id: Y966KYm_lkGt_gcgSEfiIA
+projectId: 9P0_U-P7nU-YTLT8Plutzg
+projectName: Musala Project
+created: 2022-02-25T17:03:04.0436079Z
+protocol: 1
+tests:
+- id: 6OEoVx6vH0SqdIXs0eCpoQ
+  name: Test Case 3
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-02-19T17:55:17.0000000
+  modificationDate: 2022-02-22T05:50:09.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: S0NZhtT_dEiumA3zEoRdQw
+    name: MusalaSite
+    url: http://www.musala.com/
+    platform: Web
+  steps:
+  - id: fBU7oJ0TfUqWdycRuFahPA
+    comments: >
+      Step 1) Visit http://www.musala.com/
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '[[BaseURL]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: pfXcFCPmVEumJbku8-7wCw
+    comments: >
+      Step 2) Navigate to Careers menu (from the top)
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: LRmqnB4UaUqfdHcqCjuGSQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: bIYWaHaa50OsxsZE2-XKLQ
+    comments: >
+      Step 3) Click ‘Check our open positions’ button
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: f6dhJ4D8CkKUj2EDL3o8SA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: HJpBNypFW0GiRLknmF-uCQ
+    comments: >-
+      Step 4) Verify that ‘Join Us’ page is opened (can verify that URL is correct:
+
+      http://www.musala.com/careers/join-us/
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 56a4ad1b-b563-4322-ba29-d165090302b2
+      source: System
+    parameterMaps:
+    - name: url
+      value: ''
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: url
+      value: https://www.musala.com/careers/join-us/
+    contexts: []
+  - id: FElvsUh_Sku2cEwUzkLgUQ
+    comments: >
+      Step 5) From the dropdown ‘Select location’ select ‘Anywhere’
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: XogndMGOCUmuDRh0K8Y5BA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 45fdd921-b359-4d6a-b7c5-5f9a3612c0f2
+      source: System
+    parameterMaps:
+    - name: value
+      value: Anywhere
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 1nQa9KXyDkCfegCmaqhDHw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    elementId: 8lMXuUrgcUKC8ag_MmihIw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: Nv5yOK03QkCH5IC9CwaKoQ
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: SGevOykwSk6RP7MH2JE74A
+    comments: Step 6) Choose open position by name (e.g. Experienced Automation QA Engineer)
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: HZTQ46BPSkeV5xlherYeAw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: rvhk5Wfh0U-CUSv69m5GAw
+    comments: 'Step 7) Verify that section is shown: General Description'
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: FWWC6Xa50UKdVwr2yjM0mg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a9ab4ae7-38ca-4451-a636-1b801a774503
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RH0lvHXT5kOWRkFC6FkymA
+    comments: 'Step 7) Verify that section is shown: Requirements'
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    elementId: _YqQO4kOrEmssf_MxP9K7g
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a9ab4ae7-38ca-4451-a636-1b801a774503
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: orGR34LKIUW4buiQKppgQQ
+    comments: 'Step 7) Verify that section is shown: Responsibilities'
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Action
+    elementId: 09m28nRKdk-K4j3jRa28EQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a9ab4ae7-38ca-4451-a636-1b801a774503
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: V3tzEUWKvk2gAHBY5Rj12A
+    comments: 'Step 7) Verify that section is shown: What we offer'
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Action
+    elementId: 1kuk5ZXMqU2bSyMQHBVqcg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a9ab4ae7-38ca-4451-a636-1b801a774503
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: RpFk73tR1Umxn4lbsWNTFA
+    comments: >
+      Step 8) Verify that ‘Apply’ button is present at the bottom
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 1
+    type: Action
+    elementId: fHibJPhiK0CmVkP5uykRnQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: a9ab4ae7-38ca-4451-a636-1b801a774503
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: k2jLIQYm2kax5dY-cqUutg
+    comments: >
+      Step 9) Click ‘Apply’ button
+    enabled: true
+    invertResult: false
+    order: 13
+    repeat: 1
+    type: Addon
+    elementId: fHibJPhiK0CmVkP5uykRnQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Zg1ImgUUs0-UMlC_P41t4Q
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 14
+    repeat: 1
+    type: Addon
+    elementId: kuqetGmPVUCJo89PHzliaA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: Z0JU97Txc0G-nl0HwPAucw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps:
+    - name: text
+      value: '{{Name}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Og81hhPmhUKK8PmKiJvN4A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 15
+    repeat: 1
+    type: Addon
+    elementId: D9TuRNUNbkqur0BneaER8g
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: Z0JU97Txc0G-nl0HwPAucw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps:
+    - name: text
+      value: '{{Email}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: VRnhMG6hVUawGhhaFvfaiw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 16
+    repeat: 1
+    type: Addon
+    elementId: -cFz23NBnESbOaETqZQWxQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: Z0JU97Txc0G-nl0HwPAucw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps:
+    - name: text
+      value: '{{Mobile}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: C7ki7XEVXkCACqqdRjhh7w
+    enabled: true
+    invertResult: false
+    order: 17
+    repeat: 1
+    type: Action
+    elementId: wN-WQyqdU0GYswYmfWp3wQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 9rj1RuCXcE-ff0DH0wpVFQ
+    enabled: true
+    invertResult: false
+    order: 18
+    repeat: 1
+    type: Action
+    elementId: fEGFEqCQHUiXGw8tTknYxg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 7WrORVDu1kmr6ZANaL-dEw
+    enabled: true
+    invertResult: false
+    order: 19
+    repeat: 1
+    type: Action
+    elementId: rOQ09fazkUaeTbMMkXKOMQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: D:\Test CV.pdf
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: -h8AbvhPOUSLmiSlt1CTJw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 20
+    repeat: 1
+    type: Addon
+    elementId: wN-WQyqdU0GYswYmfWp3wQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: YmMcmCyTgECdyJUFcqj7IA
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 21
+    repeat: 1
+    type: Action
+    elementId: VYNzl-Ldo0-wjCgpI8Wqog
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Always
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: '{{Error}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 8S3WRdxblU697iEBRv9rvg
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 22
+    repeat: 1
+    type: Addon
+    elementId: fEGFEqCQHUiXGw8tTknYxg
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: EwT6kZ6c_0a1lx7pcedJgw
+    enabled: false
+    invertResult: false
+    order: 23
+    repeat: 1
+    type: Action
+    elementId: NvGsuFpAsES_-uT9J37FTA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: http://www.musala.com/
+    type: Input
+  - name: Name
+    description: ''
+    value: Taha
+    type: Input
+  - name: Email
+    description: ''
+    value: taha114114@yahoo.com
+    type: Input
+  - name: Mobile
+    description: ''
+    value: 01212151030
+    type: Input
+  - name: Error
+    description: ''
+    value: One or more fields have an error. Please check and try again.
+    type: Input
+auxTests: []
+elements:
+- id: LRmqnB4UaUqfdHcqCjuGSQ
+  name: CAREERS
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //nav/div/div/ul//a[. = 'Careers']
+    priority: 0
+  - name: XPATH
+    value: //nav/div/div/ul/li[5]/a
+    priority: 1
+  - name: XPATH
+    value: /html/body/header/nav[2]/div/div/ul/li[5]/a
+    priority: 2
+- id: f6dhJ4D8CkKUj2EDL3o8SA
+  name: Check our open positions
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Check our open positions']
+    priority: 0
+  - name: XPATH
+    value: //section//button
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/div[1]/div/div[1]/div/section/div/a/button
+    priority: 2
+- id: XogndMGOCUmuDRh0K8Y5BA
+  name: get_location
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjQ
+    name: Select
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#get_location'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='get_location']"
+    priority: 1
+  - name: XPATH
+    value: //select
+    priority: 2
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[1]/select
+    priority: 3
+- id: 8lMXuUrgcUKC8ag_MmihIw
+  name: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: "//article[3]//div[. = '\n              \n            ']"
+    priority: 0
+  - name: XPATH
+    value: //article[3]//div[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[2]/article[3]/div/a/div/div[2]
+    priority: 2
+- id: HZTQ46BPSkeV5xlherYeAw
+  name: article
+  type:
+    id: jUwODgyNjAyNzk2NTk1NzM
+    name: article
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[2]/article[1]
+    priority: 0
+- id: FWWC6Xa50UKdVwr2yjM0mg
+  name: General description
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTA
+    name: Heading
+    source: System
+  locators:
+  - name: XPATH
+    value: //h2[. = 'General description']
+    priority: 0
+  - name: XPATH
+    value: //div[1]/div[1]/div/h2
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/section/article/div/div[2]/div[1]/div[1]/div[1]/div[2]/h2
+    priority: 2
+- id: _YqQO4kOrEmssf_MxP9K7g
+  name: Requirements
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: >-
+      //div[. = '
+      							Requirements
+      						']
+    priority: 0
+  - name: XPATH
+    value: //div[2]/div[1]/div[1]/div[2]/div[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/section/article/div/div[2]/div[1]/div[1]/div[2]/div[2]
+    priority: 2
+- id: 09m28nRKdk-K4j3jRa28EQ
+  name: Responsibilities
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: >-
+      //div[. = '
+      							Responsibilities
+      						']
+    priority: 0
+  - name: XPATH
+    value: //div[2]/div[1]/div[2]/div[1]/div[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/section/article/div/div[2]/div[1]/div[2]/div[1]/div[2]
+    priority: 2
+- id: 1kuk5ZXMqU2bSyMQHBVqcg
+  name: What we offer
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: >-
+      //div[. = '
+      							What we offer
+      						']
+    priority: 0
+  - name: XPATH
+    value: //div[2]/div[1]/div[2]/div[2]/div[2]
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/section/article/div/div[2]/div[1]/div[2]/div[2]/div[2]
+    priority: 2
+- id: fHibJPhiK0CmVkP5uykRnQ
+  name: INPUT1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //a/input
+    priority: 0
+  - name: XPATH
+    value: /html/body/main/div/div/section/article/div/div[2]/div[2]/a/input
+    priority: 1
+- id: kuqetGmPVUCJo89PHzliaA
+  name: your-name
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-1'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='your-name']"
+    priority: 1
+  - name: XPATH
+    value: //p[1]/span/input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[1]/span/input
+    priority: 3
+- id: D9TuRNUNbkqur0BneaER8g
+  name: your-email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-2'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='your-email']"
+    priority: 1
+  - name: XPATH
+    value: //p[2]//input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[2]/span/input
+    priority: 3
+- id: -cFz23NBnESbOaETqZQWxQ
+  name: mobile-number
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-3'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='mobile-number']"
+    priority: 1
+  - name: XPATH
+    value: //p[3]//input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[3]/span/input
+    priority: 3
+- id: wN-WQyqdU0GYswYmfWp3wQ
+  name: adConsentChx
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDk
+    name: Checkbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#adConsentChx'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='adConsentChx']"
+    priority: 1
+  - name: XPATH
+    value: //div[3]/input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[3]/input
+    priority: 3
+- id: fEGFEqCQHUiXGw8tTknYxg
+  name: INPUT2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //p/input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[4]/p/input
+    priority: 1
+- id: rOQ09fazkUaeTbMMkXKOMQ
+  name: uploadtextfield
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#uploadtextfield'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='uploadtextfield']"
+    priority: 1
+  - name: XPATH
+    value: //span[2]/input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[2]/span[2]/input
+    priority: 3
+- id: VYNzl-Ldo0-wjCgpI8Wqog
+  name: One or more fields have an error. Ple...1
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[. = 'One or more fields have an error. Please check and try again.']
+    priority: 0
+  - name: XPATH
+    value: //form/div[5]/div/div
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[5]/div/div
+    priority: 2
+- id: NvGsuFpAsES_-uT9J37FTA
+  name: DIV2
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //article[5]/div/a/div
+    priority: 0
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[2]/article[5]/div/a/div
+    priority: 1
+projectParameters: []
+addons:
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.6
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  - id: Nv5yOK03QkCH5IC9CwaKoQ
+    name: Scroll To Element With Javascript
+    description: Using Javascript to scroll to the element
+    className: io.testproject.addon.jsactions.ScrollToElementAction
+  - id: Z0JU97Txc0G-nl0HwPAucw
+    name: Type text (using JavaScript)
+    description: Type {{text}} in {{element}}
+    className: io.testproject.addon.jsactions.TypeTextAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 3ECC35CC7CDCF2EEEB9BE88040421FAE0F4C78FB0963CF9ED9D077CB1893A3FA

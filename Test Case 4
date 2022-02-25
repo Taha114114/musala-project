@@ -1,0 +1,739 @@
+id: lz6ZIUKyjkahJl9VUvhpMA
+projectId: 9P0_U-P7nU-YTLT8Plutzg
+projectName: Musala Project
+created: 2022-02-25T17:03:04.0436723Z
+protocol: 1
+tests:
+- id: tHCVsomLPUmHi0UjZCBsAA
+  name: Test Case 4
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-02-19T18:59:25.0000000
+  modificationDate: 2022-02-22T06:31:56.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: S0NZhtT_dEiumA3zEoRdQw
+    name: MusalaSite
+    url: http://www.musala.com/
+    platform: Web
+  steps:
+  - id: jQ769XleRkucaR0V7GYgXg
+    comments: >
+      Step 1) Visit http://www.musala.com/
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '[[BaseURL]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: K8WmHJVTc0ajo_CFWnp4nA
+    comments: >
+      Step 2) Go to Careers
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: LRmqnB4UaUqfdHcqCjuGSQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: nJ_J2dsBqkuxSZAY2f6Iaw
+    comments: >
+      Step 3) Click ‘Check our open positions’ button
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Addon
+    elementId: f6dhJ4D8CkKUj2EDL3o8SA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 6xLVhRQjV0GrVb0bk4v8QQ
+    comments: >
+      Step 4) Filter the available positions by available cities in the dropdown ‘Select location’ (Sofia and
+
+      Skopje)
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: XogndMGOCUmuDRh0K8Y5BA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 45fdd921-b359-4d6a-b7c5-5f9a3612c0f2
+      source: System
+    parameterMaps:
+    - name: value
+      value: Sofia
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: OcZrYgZVgEqtpnUprebcUA
+    comments: Count positions in Sofia
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 72Wa_2Vse0uCOCY58ZbcCA
+      source: Store
+      addonId: Ow3LGSkBqUyGjzyAibUJig
+    parameterMaps:
+    - name: byType
+      value: xpath
+      direction: Input
+    - name: byString
+      value: /html/body/main/div/div/section/div[2]/article
+      direction: Input
+    - name: amount
+      value: '[[CountofPositions]]'
+      direction: Output
+    conditions: []
+    validations:
+    - type: Equals
+      invert: false
+      field: amount
+      value: 18
+    contexts: []
+  - id: YUj9svpsV0-_ZpIf5w63uQ
+    comments: Write Sofia in file
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: QAGUrrkErk6dS7lseV2APg
+      source: Store
+      addonId: aM3yzHVqoEakt07l5gBcsA
+    parameterMaps:
+    - name: filePath
+      value: '[[FilePath]]'
+      direction: Input
+    - name: fileContent
+      value: "Sofia\n "
+      direction: Input
+    - name: createFile
+      value: true
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: NfsOoA7BSEa0CWP_zfz54A
+    comments: Write positions details
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 100
+    type: Test
+    targetTestId: gbBLjb9TQUGQb1aU5iYgiQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: ApplicationURL
+      value: '{{ApplicationURL}}'
+      direction: Input
+    - name: PositionTitle
+      value: '{{PositionTitle}}'
+      direction: Input
+    - name: PositionURL
+      value: '{{PositionURL}}'
+      direction: Input
+    conditions:
+    - parameter: '[[CountofPositions]]'
+      type: NotEquals
+      invert: false
+      value: 0
+    validations: []
+    contexts: []
+  - id: OWvQziATT06zC0CzcGZ0BQ
+    comments: Write dots line to be separator
+    enabled: true
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: QAGUrrkErk6dS7lseV2APg
+      source: Store
+      addonId: aM3yzHVqoEakt07l5gBcsA
+    parameterMaps:
+    - name: filePath
+      value: '[[FilePath]]'
+      direction: Input
+    - name: fileContent
+      value: "...................................................................\n "
+      direction: Input
+    - name: createFile
+      value: true
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: G0Sn1VwrQk21nof1etkLzw
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 1
+    type: Action
+    elementId: XogndMGOCUmuDRh0K8Y5BA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 45fdd921-b359-4d6a-b7c5-5f9a3612c0f2
+      source: System
+    parameterMaps:
+    - name: value
+      value: Skopje
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: MmSLI8a7s0usyUxIQkklzA
+    comments: Count positions in Sofia
+    enabled: true
+    invertResult: false
+    order: 10
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 72Wa_2Vse0uCOCY58ZbcCA
+      source: Store
+      addonId: Ow3LGSkBqUyGjzyAibUJig
+    parameterMaps:
+    - name: byType
+      value: xpath
+      direction: Input
+    - name: byString
+      value: /html/body/main/div/div/section/div[2]/article
+      direction: Input
+    - name: amount
+      value: '[[CountofPositions]]'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: snKELW84iUiDth8GE-jDZg
+    comments: Write Skopje to file
+    enabled: true
+    invertResult: false
+    order: 11
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: QAGUrrkErk6dS7lseV2APg
+      source: Store
+      addonId: aM3yzHVqoEakt07l5gBcsA
+    parameterMaps:
+    - name: filePath
+      value: '[[FilePath]]'
+      direction: Input
+    - name: fileContent
+      value: "Skopje\n "
+      direction: Input
+    - name: createFile
+      value: ''
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: Tk_BWt0-akWpPziw8Wk7Fw
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 12
+    repeat: 100
+    type: Test
+    targetTestId: gbBLjb9TQUGQb1aU5iYgiQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      source: None
+    parameterMaps:
+    - name: ApplicationURL
+      value: '{{ApplicationURL}}'
+      direction: Input
+    - name: PositionTitle
+      value: '{{PositionTitle}}'
+      direction: Input
+    - name: PositionURL
+      value: '{{PositionURL}}'
+      direction: Input
+    conditions:
+    - parameter: '[[CountofPositions]]'
+      type: NotEquals
+      invert: false
+      value: 0
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: http://www.musala.com/
+    type: Input
+  - name: PositionTitle
+    description: ''
+    value: taha test
+    type: Input
+  - name: PositionURL
+    description: ''
+    value: ''
+    type: Input
+auxTests:
+- id: gbBLjb9TQUGQb1aU5iYgiQ
+  name: Test Case 4 _Loop
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-02-19T19:18:02.0000000
+  modificationDate: 2022-02-22T05:56:38.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: 2WTntp07hESzyIiYV_5NjQ
+    comments: Click on position
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Addon
+    elementId: HZTQ46BPSkeV5xlherYeAw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: sDj5dS8Bo0KNMOnqWReAXQ
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Addon
+    elementId: YEaPDl-mQkujWSUeGgK2Ug
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeName
+      value: data-alt
+      direction: Input
+    - name: attributeValue
+      value: '{{PositionTitle}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: BCGaXgRzSkOVY1xt9bJanA
+    comments: Write title
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: QAGUrrkErk6dS7lseV2APg
+      source: Store
+      addonId: aM3yzHVqoEakt07l5gBcsA
+    parameterMaps:
+    - name: filePath
+      value: '[[FilePath]]'
+      direction: Input
+    - name: fileContent
+      value: >
+        Position: {{PositionTitle}}
+      direction: Input
+    - name: createFile
+      value: ''
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: adnZom1WMkSm7WhpxakG3A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Addon
+    elementId: fMDJOR82qU6Zd9cqVIhE7Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 7i7ugpUNpkej4ZOFJYYMcw
+      source: Store
+      addonId: Xey4bVsJQEODIUN7ssaJMg
+    parameterMaps:
+    - name: attributeName
+      value: href
+      direction: Input
+    - name: attributeValue
+      value: '{{PositionURL}}'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  - id: DXh-rX_3S0Ku8YYi4ioPEg
+    comments: Write Position URL
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: QAGUrrkErk6dS7lseV2APg
+      source: Store
+      addonId: aM3yzHVqoEakt07l5gBcsA
+    parameterMaps:
+    - name: filePath
+      value: '[[FilePath]]'
+      direction: Input
+    - name: fileContent
+      value: >2
+         More info: {{PositionURL}}
+      direction: Input
+    - name: createFile
+      value: ''
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: 5ODUTfnQJkeZNSuLPzhK-g
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Addon
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6ud5oPOg9kaqrUjWtnz_pw
+      source: Store
+      addonId: rxLEAqSrKE-MmdgcUtqD4Q
+    parameterMaps:
+    - name: expression
+      value: '[[CountofPositions]]-1'
+      direction: Input
+    - name: result
+      value: '[[CountofPositions]]'
+      direction: Output
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: http://www.musala.com/
+    type: Input
+  - name: PositionTitle
+    description: ''
+    value: taha test
+    type: Input
+  - name: PositionURL
+    description: ''
+    value: ''
+    type: Input
+elements:
+- id: LRmqnB4UaUqfdHcqCjuGSQ
+  name: CAREERS
+  type:
+    id: jUwODgyNjAyNzk2NTk1NTE
+    name: Link
+    source: System
+  locators:
+  - name: XPATH
+    value: //nav/div/div/ul//a[. = 'Careers']
+    priority: 0
+  - name: XPATH
+    value: //nav/div/div/ul/li[5]/a
+    priority: 1
+  - name: XPATH
+    value: /html/body/header/nav[2]/div/div/ul/li[5]/a
+    priority: 2
+- id: f6dhJ4D8CkKUj2EDL3o8SA
+  name: Check our open positions
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Check our open positions']
+    priority: 0
+  - name: XPATH
+    value: //section//button
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/div/div/div[1]/div/div[1]/div/section/div/a/button
+    priority: 2
+- id: XogndMGOCUmuDRh0K8Y5BA
+  name: get_location
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjQ
+    name: Select
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#get_location'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='get_location']"
+    priority: 1
+  - name: XPATH
+    value: //select
+    priority: 2
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[1]/select
+    priority: 3
+- id: HZTQ46BPSkeV5xlherYeAw
+  name: article
+  type:
+    id: jUwODgyNjAyNzk2NTk1NzM
+    name: article
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[2]/article[1]
+    priority: 0
+- id: YEaPDl-mQkujWSUeGgK2Ug
+  name: Title
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[2]/article[[[CountofPositions]]]/div/a/div/div[1]/h2
+    priority: 0
+- id: fMDJOR82qU6Zd9cqVIhE7Q
+  name: PositionURL
+  description: ''
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDM
+    name: Generic Web Element
+    source: System
+  locators:
+  - name: XPATH
+    value: /html/body/main/div/div/section/div[2]/article[[[CountofPositions]]]/div/a
+    priority: 0
+projectParameters: []
+addons:
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.6
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  - id: Nv5yOK03QkCH5IC9CwaKoQ
+    name: Scroll To Element With Javascript
+    description: Using Javascript to scroll to the element
+    className: io.testproject.addon.jsactions.ScrollToElementAction
+  - id: Z0JU97Txc0G-nl0HwPAucw
+    name: Type text (using JavaScript)
+    description: Type {{text}} in {{element}}
+    className: io.testproject.addon.jsactions.TypeTextAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 3ECC35CC7CDCF2EEEB9BE88040421FAE0F4C78FB0963CF9ED9D077CB1893A3FA
+- id: Ow3LGSkBqUyGjzyAibUJig
+  source: Store
+  version: 2.3
+  actions:
+  - id: 72Wa_2Vse0uCOCY58ZbcCA
+    name: Count Elements
+    description: Count element found by {{locator}}
+    className: io.testproject.addons.element.web.CountElementsFoundByWeb
+  minSdkLevel: 2
+  minSdkVersion: 0.63.0
+  sdkGeneration: 1
+  language: Java
+  hash: A710BDD6407D56500AD2F907DE8348DF62297963EE315FB833C904EEE56EE872
+- id: aM3yzHVqoEakt07l5gBcsA
+  source: Store
+  version: 0.8
+  actions:
+  - id: QAGUrrkErk6dS7lseV2APg
+    name: Write to File
+    description: Write to a file
+    className: WriteToFile
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 0AD30A006C781A8B08B8DB78E9CE5F83B5EDC0B66B32625E610B0C2E4FF8CBB7
+- id: Xey4bVsJQEODIUN7ssaJMg
+  source: Store
+  version: 1.0.2
+  actions:
+  - id: 7i7ugpUNpkej4ZOFJYYMcw
+    name: Get attribute value
+    description: Get {{attributeName}} attribute value on {{element}}
+    className: io.testproject.addons.web.element.GetElementAttribute
+  minSdkLevel: 2
+  minSdkVersion: 0.60.0
+  sdkGeneration: 1
+  language: Java
+  hash: 417FED45B4770CF10BB4239979BF9834F29D43B79FB62A60C13ED63F83BC97FB
+- id: rxLEAqSrKE-MmdgcUtqD4Q
+  source: Store
+  version: 0.4
+  actions:
+  - id: 6ud5oPOg9kaqrUjWtnz_pw
+    name: Evaluate Mathematical Expression
+    description: Evaluate {{expression}}
+    className: addon.EvaluateMathExpr
+  minSdkLevel: 2
+  minSdkVersion: 0.62.0
+  sdkGeneration: 1
+  language: Java
+  hash: 3A2995AE450D978B95B8D92A896E0FC122A177E018E865DF9A9A83CFA5815463

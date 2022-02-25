@@ -1,0 +1,494 @@
+id: z3xC4mLxckCz11ckjXlPdg
+projectId: 9P0_U-P7nU-YTLT8Plutzg
+projectName: Musala Project
+created: 2022-02-25T17:03:04.0434800Z
+protocol: 1
+tests:
+- id: KoRAizIkY0W6ncT9EwYlCA
+  name: Test Case 1
+  description: ''
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 0.1
+  creationDate: 2022-02-19T14:28:26.0000000
+  modificationDate: 2022-02-22T05:18:49.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: S0NZhtT_dEiumA3zEoRdQw
+    name: MusalaSite
+    url: http://www.musala.com/
+    platform: Web
+  steps:
+  - id: x5qqlp48M02rpDshg-RISQ
+    comments: Step 1) Visit http://www.musala.com/)
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 49c5d8d8-4ba8-42f0-823d-702e6acfb23a
+      source: System
+    parameterMaps:
+    - name: url
+      value: '[[BaseURL]]'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: HkLIXt7MKESgLywDzX0F2w
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Addon
+    elementId: EJR_dSsuRUG7Scs3UE2fGA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: c7OPWafS8kaFJUBVwrhoRw
+      source: Store
+      addonId: 9G7qW0nEqU60ObO6IXJshg
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: SyeZYrkH0EO3vRngiOTmlg
+    comments: >
+      Step 3) Fill all required fields except email
+    enabled: true
+    invertResult: false
+    order: 3
+    repeat: 1
+    type: Action
+    elementId: kuqetGmPVUCJo89PHzliaA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Name1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: MvCmQcBCuk6d0oaJXtKzdg
+    comments: >
+      Step 3) Fill all required fields except email
+    enabled: true
+    invertResult: false
+    order: 4
+    repeat: 1
+    type: Action
+    elementId: -cFz23NBnESbOaETqZQWxQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: 0123456789
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: REyNgYtpsUenTYp8wI_1Ww
+    comments: >
+      Step 3) Fill all required fields except email
+    enabled: true
+    invertResult: false
+    order: 5
+    repeat: 1
+    type: Action
+    elementId: hIzQxuHh4ECYGWXVxah4XA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Subject1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: hXbRcVIbBkGIwZcwVUInZw
+    comments: >
+      Step 3) Fill all required fields except email
+    enabled: true
+    invertResult: false
+    order: 6
+    repeat: 1
+    type: Action
+    elementId: yf1rGEKaB0aKUEzlwP9doA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: Your Message 1
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: IVy0mD7wGUquL7AjsisgEQ
+    comments: >
+      Step 4) Under email field enter string with wrong email format (e.g. test@test)
+    enabled: true
+    invertResult: false
+    order: 7
+    repeat: 1
+    type: Action
+    elementId: D9TuRNUNbkqur0BneaER8g
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 6f94fdaa-0041-4265-b73b-ecfcbe702d66
+      source: System
+    parameterMaps:
+    - name: keys
+      value: '{{Email}}'
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  - id: ptsJNfjrDUWzr2Vmm-IDDA
+    enabled: false
+    invertResult: false
+    order: 8
+    repeat: 1
+    type: Action
+    elementId: 0NoaxNjpVU-ddj2JlOw_gQ
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts:
+    - order: 0
+      locatorType: XPATH
+      locatorValue: //*[@name = 'a-kf664mshqz7f']|/html/body/div[8]/div/div[9]/div/div/div/form/span/span[1]/div/div/iframe
+  - id: HsYtgZNOKkezOKTkcUoQkg
+    comments: This step was auto generated from several steps
+    enabled: true
+    invertResult: false
+    order: 9
+    repeat: 5
+    type: Test
+    targetTestId: JVL_vDjXF0WflGazTqeQ0Q
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Always
+    action:
+      source: None
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  parameters:
+  - name: ApplicationURL
+    description: Auto generated application URL parameter
+    value: http://www.musala.com/
+    type: Input
+  - name: Email
+    description: ''
+    value: email@
+    type: Input
+auxTests:
+- id: JVL_vDjXF0WflGazTqeQ0Q
+  name: TestCase1- loop
+  description: This test was auto generated from steps of the 'Test Case 1' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2022-02-22T05:18:12.0000000
+  modificationDate: 2022-02-22T05:18:12.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  steps:
+  - id: CC3A2etH5EWipdAD1ZxBYw
+    comments: >
+      Step 5) Click ‘Send’ button
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: BUkcXlnmVkSDYkqr1vyufA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vzKlLx7avk6r1ds41PXi3A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: 4RRw68pDAkaPvTzeuYSZkw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Always
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: One or more fields have an error. Please check and try again.
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters: []
+elements:
+- id: EJR_dSsuRUG7Scs3UE2fGA
+  name: CONTACT US
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //button[. = 'Contact us']
+    priority: 0
+  - name: XPATH
+    value: //div/div/div/a/button
+    priority: 1
+  - name: XPATH
+    value: /html/body/main/section[2]/div/div/div/a[1]/button
+    priority: 2
+- id: kuqetGmPVUCJo89PHzliaA
+  name: your-name
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-1'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='your-name']"
+    priority: 1
+  - name: XPATH
+    value: //p[1]/span/input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[1]/span/input
+    priority: 3
+- id: -cFz23NBnESbOaETqZQWxQ
+  name: mobile-number
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-3'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='mobile-number']"
+    priority: 1
+  - name: XPATH
+    value: //p[3]//input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[3]/span/input
+    priority: 3
+- id: hIzQxuHh4ECYGWXVxah4XA
+  name: your-subject
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-4'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='your-subject']"
+    priority: 1
+  - name: XPATH
+    value: //p[4]//input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[4]/span/input
+    priority: 3
+- id: yf1rGEKaB0aKUEzlwP9doA
+  name: your-message
+  type:
+    id: jUwODgyNjAyNzk2NTk2OTA
+    name: textarea
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-5'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='your-message']"
+    priority: 1
+  - name: XPATH
+    value: //span/textarea
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[5]/span/textarea
+    priority: 3
+- id: D9TuRNUNbkqur0BneaER8g
+  name: your-email
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDY
+    name: Textbox
+    source: System
+  locators:
+  - name: CSSSELECTOR
+    value: '#cf-2'
+    priority: 0
+  - name: CSSSELECTOR
+    value: "[name='your-email']"
+    priority: 1
+  - name: XPATH
+    value: //p[2]//input
+    priority: 2
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/p[2]/span/input
+    priority: 3
+- id: 0NoaxNjpVU-ddj2JlOw_gQ
+  name: DIV
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //span/div[1]
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[2]/div[3]/div[1]/div/div/span/div[1]
+    priority: 1
+- id: BUkcXlnmVkSDYkqr1vyufA
+  name: INPUT
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //p/input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[2]/p/input
+    priority: 1
+- id: 4RRw68pDAkaPvTzeuYSZkw
+  name: One or more fields have an error. Ple...
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[. = 'One or more fields have an error. Please check and try again.']
+    priority: 0
+  - name: XPATH
+    value: //form/div[3]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[3]
+    priority: 2
+projectParameters: []
+addons:
+- id: 9G7qW0nEqU60ObO6IXJshg
+  source: Store
+  version: 1.6
+  actions:
+  - id: c7OPWafS8kaFJUBVwrhoRw
+    name: Click (using JavaScript)
+    description: Click {{element}}
+    className: io.testproject.addon.jsactions.ClickAction
+  - id: Nv5yOK03QkCH5IC9CwaKoQ
+    name: Scroll To Element With Javascript
+    description: Using Javascript to scroll to the element
+    className: io.testproject.addon.jsactions.ScrollToElementAction
+  - id: Z0JU97Txc0G-nl0HwPAucw
+    name: Type text (using JavaScript)
+    description: Type {{text}} in {{element}}
+    className: io.testproject.addon.jsactions.TypeTextAction
+  minSdkLevel: 2
+  minSdkVersion: 0.65.0
+  sdkGeneration: 1
+  language: Java
+  hash: 3ECC35CC7CDCF2EEEB9BE88040421FAE0F4C78FB0963CF9ED9D077CB1893A3FA
