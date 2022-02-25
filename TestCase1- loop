@@ -1,0 +1,109 @@
+id: BxGf5E-jOkKAT3PY-RBFaA
+projectId: 9P0_U-P7nU-YTLT8Plutzg
+projectName: Musala Project
+created: 2022-02-25T17:03:04.0438252Z
+protocol: 1
+tests:
+- id: JVL_vDjXF0WflGazTqeQ0Q
+  name: TestCase1- loop
+  description: This test was auto generated from steps of the 'Test Case 1' test
+  platform: Web
+  type: Web
+  driverType: Chrome
+  version: 1.0
+  creationDate: 2022-02-22T05:18:12.0000000
+  modificationDate: 2022-02-22T05:18:12.0000000
+  settings:
+    automationAssistant: true
+    appId: S0NZhtT_dEiumA3zEoRdQw
+    stepSleepTime: 500
+    stepTimeout: 15000
+    stepSleepTiming: Before
+    stepFailureBehaviorType: Abort
+    stepTakeScreenshotConditionType: Failure
+  application:
+    id: S0NZhtT_dEiumA3zEoRdQw
+    name: MusalaSite
+    url: http://www.musala.com/
+    platform: Web
+  steps:
+  - id: CC3A2etH5EWipdAD1ZxBYw
+    comments: >
+      Step 5) Click ‘Send’ button
+    enabled: true
+    invertResult: false
+    order: 1
+    repeat: 1
+    type: Action
+    elementId: BUkcXlnmVkSDYkqr1vyufA
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Inherit
+    action:
+      id: 02d572b2-d610-4700-9ad3-40076ddb9807
+      source: System
+    parameterMaps: []
+    conditions: []
+    validations: []
+    contexts: []
+  - id: vzKlLx7avk6r1ds41PXi3A
+    comments: ''
+    enabled: true
+    invertResult: false
+    order: 2
+    repeat: 1
+    type: Action
+    elementId: 4RRw68pDAkaPvTzeuYSZkw
+    settings:
+      sleepTime: -1
+      timeout: -1
+      sleepTiming: Inherit
+      failureBehaviorType: Inherit
+      takeScreenshotConditionType: Always
+    action:
+      id: 85da72d0-c5a4-4587-be33-8cb3b5fa7910
+      source: System
+    parameterMaps:
+    - name: text
+      value: One or more fields have an error. Please check and try again.
+      direction: Input
+    conditions: []
+    validations: []
+    contexts: []
+  parameters: []
+auxTests: []
+elements:
+- id: BUkcXlnmVkSDYkqr1vyufA
+  name: INPUT
+  type:
+    id: jUwODgyNjAyNzk2NTk1NDc
+    name: Button
+    source: System
+  locators:
+  - name: XPATH
+    value: //p/input
+    priority: 0
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[2]/p/input
+    priority: 1
+- id: 4RRw68pDAkaPvTzeuYSZkw
+  name: One or more fields have an error. Ple...
+  type:
+    id: jUwODgyNjAyNzk2NTk1NjM
+    name: Div
+    source: System
+  locators:
+  - name: XPATH
+    value: //div[. = 'One or more fields have an error. Please check and try again.']
+    priority: 0
+  - name: XPATH
+    value: //form/div[3]
+    priority: 1
+  - name: XPATH
+    value: /html/body/div[8]/div/div[9]/div/div/div/form/div[3]
+    priority: 2
+projectParameters: []
+addons: []
